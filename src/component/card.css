@@ -1,0 +1,16 @@
+.container{
+}
+
+.card {
+    width:50%;
+    float: left;
+    display: flex;
+}
+
+.image {
+
+}
+
+.detail {
+    
+}

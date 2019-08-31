@@ -1,0 +1,25 @@
+.App {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    grid-auto-rows: 100px auto 100px;
+    height: 100%;
+}
+
+.head {
+    grid-row: 1/2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+}
+
+.body {
+    grid-row: 2/3;
+    overflow: auto;
+}
+
+.bottomBar {
+    grid-row: 3/4;
+}

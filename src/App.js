@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
+import BottomBar from './component/bottomBar'
+import cardData from './cards.json'
+import Cards from './component/card'
 
 const COLORS = {
   Psychic: "#f8a5c2",
@@ -16,9 +19,22 @@ const COLORS = {
 }
 
 class App extends Component {
+  state = {
+    cardData: null,
+  }
+
   render() {
+    console.log(cardData);
     return (
       <div className="App">
+        <div className="head">My Pokedex</div>
+        <div className="body">
+          {cardData.cards.map((item) => {
+            return <Cards cardData={item}></Cards>;
+          })}
+          
+        </div>
+        <BottomBar className="bottomBar">BottomBar</BottomBar>
       </div>
     )
   }
